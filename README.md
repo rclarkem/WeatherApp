@@ -21,3 +21,6 @@ This project allows users to see what season there are based on their geolocatio
 
 ## Motivation
 I wanted to make a basic frontend UI that solidified my knowledge of React and to learn the Geolocation API. 
+
+## Credit
+Stephen Grider -> React Course
