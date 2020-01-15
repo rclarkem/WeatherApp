@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+import './SeasonDisplay.css'
+import React from 'react'
 import { Icon } from 'semantic-ui-react'
 import { Jumbotron, Container } from 'react-bootstrap'
 
@@ -11,23 +12,19 @@ const getSeason = (lat, month) => {
 }
 
 const seasonStyle = {
-	summer: { text: "Let's hit the beach!", icon: 'sun' },
-	winter: { text: 'Burr, it is chilly!', icon: 'snowflake' },
+	summer: { text: "Let's hit the beach!", icon: 'sun', iconColor: 'orange' },
+	winter: { text: 'Burr, it is chilly!', icon: 'snowflake', iconColor: 'white' },
 }
 
 export default function SeasonDisplay(props) {
 	const season = getSeason(props.lat, new Date().getMonth())
-	const { text, icon } = seasonStyle[season]
+	const { text, icon, color, iconColor } = seasonStyle[season]
 
 	return (
-		<div>
-			<Jumbotron fluid>
-				<Container>
-					<Icon name={icon} size='big' />
-					<h1>{text}</h1>
-				</Container>
-				<Icon name={icon} size='big' />
-			</Jumbotron>
+		<div className={`season-display ${season}`}>
+			<i className={`icon-top massive ${icon} icon`} style={{ color: iconColor }}></i>
+			<h1>{text}</h1>
+			<i className={`icon-bottom massive ${icon} icon`} style={{ color: iconColor }}></i>
 		</div>
 	)
 }
