@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { Fragment } from 'react'
+import { Icon } from 'semantic-ui-react'
 import { Jumbotron, Container } from 'react-bootstrap'
 
 const getSeason = (lat, month) => {
@@ -10,15 +10,24 @@ const getSeason = (lat, month) => {
 	}
 }
 
+const seasonStyle = {
+	summer: { text: "Let's hit the beach!", icon: 'sun' },
+	winter: { text: 'Burr, it is chilly!', icon: 'snowflake' },
+}
+
 export default function SeasonDisplay(props) {
 	const season = getSeason(props.lat, new Date().getMonth())
-	const seasonHeader = season === 'winter' ? 'Burr, it is chilly!' : "Let's hit the beach!"
+	const { text, icon } = seasonStyle[season]
 
 	return (
-		<Jumbotron fluid>
-			<Container>
-				<h1>{seasonHeader}</h1>
-			</Container>
-		</Jumbotron>
+		<div>
+			<Jumbotron fluid>
+				<Container>
+					<Icon name={icon} size='big' />
+					<h1>{text}</h1>
+				</Container>
+				<Icon name={icon} size='big' />
+			</Jumbotron>
+		</div>
 	)
 }
