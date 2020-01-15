@@ -9,20 +9,16 @@ export default class App extends Component {
 
 	componentDidMount() {
 		window.navigator.geolocation.getCurrentPosition(
-			// position => console.log(position),
-			// err => console.log(err),
 			position => this.setState({ lat: position.coords.latitude }),
 			err => this.setState({ errMessage: err.message }),
 		)
 	}
 
 	render() {
-		console.log(this.state.lat)
-
 		if (this.state.errMessage && !this.state.lat) {
 			return <div>Error: {this.state.errMessage}</div>
 		} else if (!this.state.errMessage && this.state.lat) {
-			return <div>Latitude: {this.state.lat}</div>
+			return <SeasonDisplay lat={this.state.lat} />
 		} else {
 			return <div>Loading!</div>
 		}
