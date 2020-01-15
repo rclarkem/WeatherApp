@@ -23,7 +23,7 @@ The idea is to implement a simple single-page application (SPA) using the React.
 
 #### Challenges:
 
-Handling events using state and props and using the Geolocation API.
+Using state and props and the Geolocation API.
 
 #### Purpose
 
