@@ -15,13 +15,17 @@ export default class App extends Component {
 		)
 	}
 
-	render() {
+	renderContent = () => {
 		if (this.state.errMessage && !this.state.lat) {
 			return <div>Error: {this.state.errMessage}</div>
 		} else if (!this.state.errMessage && this.state.lat) {
 			return <SeasonDisplay lat={this.state.lat} />
 		} else {
-			return <Loader />
+			return <Loader message='Please Accept Location Request :)' />
 		}
+	}
+
+	render() {
+		return <div className='border red'>{this.renderContent()}</div>
 	}
 }
