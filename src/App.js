@@ -3,8 +3,6 @@ import SeasonDisplay from './components/SeasonDisplay'
 import Loader from './components/Loader'
 import Error from './components/Error'
 
-let latitC
-
 export default class App extends Component {
 	state = {
 		lat: null,
@@ -18,10 +16,6 @@ export default class App extends Component {
 		)
 	}
 
-	// if (ele.name === obj) {
-	// 							console.log(ele.latitude)
-	// 						}
-
 	tester = obj => {
 		fetch(`  https://nominatim.openstreetmap.org/search/${obj}?format=json`)
 			.then(response => response.json())
@@ -31,7 +25,6 @@ export default class App extends Component {
 					errMessage: false,
 				})
 			})
-		// console.log(latitC)
 	}
 
 	renderContent = () => {
