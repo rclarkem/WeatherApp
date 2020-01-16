@@ -29,7 +29,7 @@ Using state and props and the Geolocation API.
 
 #### Purpose
 
-This project allows users to see what season there are based on their geolocation and to display a message to the user.
+This project gives the user a message of 'Burr, it is chilly" or "Let's go to the beach" depending on the season they are in based on their geolocation.
 
 ## Motivation
 
