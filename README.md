@@ -12,7 +12,7 @@ beta-in progress
 
 ## Demo
 
-![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-15%2000.27.22.gif)
+![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-16%2002.06.27.gif)
 ![DemoGif2](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-16%2003.05.16.gif)
 
 ## Technologies
