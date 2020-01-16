@@ -4,8 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Application
 [App](https://seasons-iitrrsq3y.now.sh/)
-In Progress
 
+
+##### Status
+beta-in progress
 
 
 ## Demo
