@@ -23,22 +23,15 @@ export default class App extends Component {
 	// 						}
 
 	tester = obj => {
-		console.log(obj)
-		for (let i = 1; i < 8; i++) {
-			fetch(`http://api.worldbank.org/v2/country/?page=${i}&format=json`)
-				.then(response => response.json())
-				.then(response => {
-					return response[1].map(ele => {
-						if (ele.name === obj) {
-							this.setState({
-								lat: ele.latitude,
-								errMessage: false,
-							})
-						}
-					})
+		fetch(`  https://nominatim.openstreetmap.org/search/${obj}?format=json`)
+			.then(response => response.json())
+			.then(response => {
+				this.setState({
+					lat: response[0].lat,
+					errMessage: false,
 				})
-			// console.log(latitC)
-		}
+			})
+		// console.log(latitC)
 	}
 
 	renderContent = () => {
@@ -52,8 +45,6 @@ export default class App extends Component {
 	}
 
 	render() {
-		console.log(this.state.lat)
-		console.log(this.state.errMessage)
 		return <div className='border red'>{this.renderContent()}</div>
 	}
 }
