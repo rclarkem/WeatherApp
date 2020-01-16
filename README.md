@@ -30,7 +30,7 @@ The idea is to implement a simple single-page application (SPA) using the React.
 
 #### Challenges:
 
-Using state and props and the Geolocation API.
+Using React's state and props system and utilizing the Geolocation API.
 
 #### Purpose
 
@@ -38,7 +38,14 @@ This project gives the user a message of 'Burr, it is chilly" or "Let's go to th
 
 ## Motivation
 
-I wanted to make a basic frontend UI that solidified my knowledge of React and to learn the Geolocation API.
+I wanted to make a basic frontend UI that solidified my knowledge of React and to learn how to use the Geolocation API.
+
+## Instructions for Cloning Repo
+
+  - Clone the most recent branch in this repository
+  > Make sure you are in the project path before running the commands
+  - Run `npm install` in your bash-enabled terminal to make sure all dependencies are installed
+  - Run `npm start` to start up a react server
 
 ## Credit
 
