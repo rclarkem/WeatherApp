@@ -3,16 +3,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Season Display Teller
 
 ## Application
+
 [App](https://rclarkem-seasons-display.now.sh/)
 
-
 ##### Status
-beta-in progress
 
+beta-in progress
 
 ## Demo
 
 ![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-15%2000.27.22.gif)
+![DemoGif2](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-16%2003.05.16.gif)
 
 ## Technologies
 
