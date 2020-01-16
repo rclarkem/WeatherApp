@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [SeasonApp](https://rclarkem-seasons-display.now.sh/)
 
+(inProgress)
+
 ## Demo
 
 ![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-15%2000.27.22.gif)
