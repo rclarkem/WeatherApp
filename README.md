@@ -6,7 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 [SeasonApp](https://rclarkem-seasons-display.now.sh/)
 
-(inProgress)
+
 
 ## Demo
 
