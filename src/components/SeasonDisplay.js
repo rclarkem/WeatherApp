@@ -1,7 +1,5 @@
 import './SeasonDisplay.css'
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
-import { Jumbotron, Container } from 'react-bootstrap'
 
 const getSeason = (lat, month) => {
 	if (month > 2 && month < 9) {

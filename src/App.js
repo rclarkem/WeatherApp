@@ -2,12 +2,16 @@ import React, { Component } from 'react'
 import SeasonDisplay from './components/SeasonDisplay'
 import Loader from './components/Loader'
 import Error from './components/Error'
-
-let latitC
+import { Route, Switch } from 'react-router-dom'
+import Weather from './components/Weather'
+import Navbar from './components/Navbar'
+import '../src/App.css'
+import { About } from './components/About'
 
 export default class App extends Component {
 	state = {
 		lat: null,
+		long: null,
 		errMessage: '',
 	}
 
@@ -18,20 +22,17 @@ export default class App extends Component {
 		)
 	}
 
-	// if (ele.name === obj) {
-	// 							console.log(ele.latitude)
-	// 						}
-
 	tester = obj => {
-		fetch(`  https://nominatim.openstreetmap.org/search/${obj}?format=json`)
+		fetch(`https://nominatim.openstreetmap.org/search/${obj}?format=json`)
 			.then(response => response.json())
 			.then(response => {
+				console.log(response)
 				this.setState({
 					lat: response[0].lat,
+					long: response[0].lon,
 					errMessage: false,
 				})
 			})
-		// console.log(latitC)
 	}
 
 	renderContent = () => {
@@ -45,6 +46,22 @@ export default class App extends Component {
 	}
 
 	render() {
-		return <div className='border red'>{this.renderContent()}</div>
+		const { long, lat } = this.state
+		return (
+			<div className='border red'>
+				<Navbar />
+				<Switch>
+					<Route exact path='/'>
+						{this.renderContent()}
+					</Route>
+					<Route exact path='/weather'>
+						<Weather long={long} lat={lat} />
+					</Route>
+					<Route exact path='/about'>
+						<About />
+					</Route>
+				</Switch>
+			</div>
+		)
 	}
 }
