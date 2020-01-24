@@ -23,9 +23,7 @@ export default class Error extends Component {
 		return (
 			<div>
 				<div className='ui message'>
-					<div className='header'>
-						Please type in your country in order to find use your latitude.{' '}
-					</div>
+					<div className='header'>Please type in your country in order to use your latitude. </div>
 				</div>
 
 				<Form className='form-color' onSubmit={this.onSubmit}>

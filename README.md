@@ -4,13 +4,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Application
 
-[SeasonApp](https://rclarkem-seasons-display.now.sh/)
+[App](https://rclarkem-seasons-display.now.sh/)
 
-(inProgress)
+##### Status
+
+beta-in progress
 
 ## Demo
 
-![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-15%2000.27.22.gif)
+##### Allow Location 
+![DemoGif1](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-16%2002.06.27.gif)
+##### Block Location 
+![DemoGif2](https://github.com/rclarkem/WeatherApp/blob/master/public/2020-01-16%2003.05.16.gif)
 
 ## Technologies
 
@@ -25,7 +30,7 @@ The idea is to implement a simple single-page application (SPA) using the React.
 
 #### Challenges:
 
-Using state and props and the Geolocation API.
+Using React's state and props system and utilizing the Geolocation API.
 
 #### Purpose
 
@@ -33,7 +38,14 @@ This project gives the user a message of 'Burr, it is chilly" or "Let's go to th
 
 ## Motivation
 
-I wanted to make a basic frontend UI that solidified my knowledge of React and to learn the Geolocation API.
+I wanted to make a basic frontend UI that solidified my knowledge of React and to learn how to use the Geolocation API.
+
+## Instructions for Cloning Repo
+
+  - Clone the most recent branch in this repository
+  > Make sure you are in the project path before running the commands
+  - Run `npm install` in your bash-enabled terminal to make sure all dependencies are installed
+  - Run `npm start` to start up a react server
 
 ## Credit
 
