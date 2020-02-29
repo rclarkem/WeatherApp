@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ##### Status
 
-beta-in progress
+Working Application- in progress
 
 ## Demo
 
@@ -19,8 +19,12 @@ beta-in progress
 
 ## Technologies
 
-- React.js and Javascript for the Front-end
-- Plain CSS, BootstrapCDN, Semantic-UI
+- [ReactJS](https://reactjs.org/)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Semantic UI](https://semantic-ui.com/)
+- Plain CSS
+- [BootstrapCDN](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+
 
 ## Project Description
 
