@@ -22,7 +22,6 @@ Working Application- in progress
 - [ReactJS](https://reactjs.org/)
 - [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Semantic UI](https://semantic-ui.com/)
-- Plain CSS
 - [BootstrapCDN](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
 
 
