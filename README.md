@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Application
 
-[App](https://rclarkem-seasons-display.now.sh/)
+[Try the Weather Coordinates App](https://rclarkem-seasons-display.now.sh/)
 
 ##### Status
 
